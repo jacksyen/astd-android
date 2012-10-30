@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bgchat" >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:gravity="center" >
+
+        
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+             >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="210dp"
+                android:layout_height="40dp" >
+
+
+                <TextView
+		            android:id="@+id/textView1"
+		            android:layout_height="40dp"
+		            android:width="80dp"
+		            android:gravity="center"
+		            android:text="用户名："
+		            android:textSize="18dp"
+		            android:textColor="#ab58aa" />
+                <TextView
+		            android:id="@+id/txtUserName"
+		            android:layout_height="40dp"
+		            android:width="80dp"
+		            android:gravity="center"
+		            android:text="XXX"
+		            android:textSize="18dp"
+		            android:textColor="#ab58aa" />
+                
+                <TextView
+		            android:id="@+id/textView2"
+		            android:layout_height="40dp"
+		            android:width="80dp"
+		            android:gravity="center"
+		            android:text="等级："
+		            android:textSize="18dp"
+		            android:textColor="#ab58aa" />
+                <TextView
+		            android:id="@+id/txtUserLv"
+		            android:layout_height="40dp"
+		            android:width="80dp"
+		            android:gravity="center"
+		            android:text="XXX"
+		            android:textSize="18dp"
+		            android:textColor="#ab58aa" />
+            </TableRow>
+        </TableLayout>
+        <!--   android:layout_width="match_parent"  -->
+    	<EditText 
+    	    android:id="@+id/txtChatInfo" 
+    	    android:layout_width="wrap_content" 
+    	    android:layout_height="fill_parent" 
+    	    android:inputType="textMultiLine"
+    	    android:background="#00000000"
+    	    android:textColor="#F5B800"
+    	    android:padding="5dp"
+    	    android:scrollbars="vertical"
+    	    android:maxLines="14"
+    	    android:focusable="false"
+    	    android:editable="false"
+    	    android:layout_marginBottom="25dp"
+    	    android:layout_marginTop="10dp"
+    	    android:layout_gravity="left"
+    	    android:gravity="top"
+    	    android:scrollbarAlwaysDrawVerticalTrack="true" >
+        <requestFocus />
+    </EditText>  
+  
+    </LinearLayout>
+    
+</LinearLayout>

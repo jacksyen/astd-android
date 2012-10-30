@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background" >
+<!--  -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="265dp"
+        android:layout_height="374dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center" >
+
+        
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+             >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="15dp" >
+
+                <TextView
+		            android:id="@+id/textView1"
+		            android:layout_height="40dp"
+		            android:width="80dp"
+		            android:gravity="center"
+		            android:text="用户名："
+		            android:textSize="18dp"
+		            android:textColor="#fff" />
+                <EditText
+                    android:id="@+id/txtUserName"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp" >
+                    <requestFocus />
+                </EditText>
+            </TableRow>
+            
+            
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="15dp"  >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="密    码："
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:width="80dp" />
+
+                 <EditText
+                     android:id="@+id/txtPwd"
+                     android:layout_width="130dp"
+                    android:layout_height="40dp"
+                     android:inputType="textPassword" />
+               
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                 android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="15dp"  >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="服务器："
+                    android:textColor="#fff"
+                    android:textSize="18dp"
+                    android:width="80dp" />
+
+                <EditText
+                    android:id="@+id/txtServerId"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:text="265" />
+                
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                 android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="15dp"  >
+
+                <CheckBox
+                    android:id="@+id/cbIsRemember"
+                    android:layout_height="40dp"
+                    android:layout_span="2"
+                    android:checked="true"
+                    android:text="记住密码"
+                    android:width="180dp" />
+
+            </TableRow>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_height="40dp"
+                android:layout_span="2"
+                android:text="登录"
+                android:width="180dp" />
+
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

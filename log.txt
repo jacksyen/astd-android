@@ -1,0 +1,1 @@
+06-07 17:41:36.949: I/System.out(26785): chat response statuscode:200
